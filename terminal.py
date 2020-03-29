@@ -1,4 +1,4 @@
-class Dodad(x_offset, y_offset):
+class Terminal(x_offset, y_offset):
     input = {
         in_1 = [x_offset, y_offset, 0],
         in_2 = [x_offset + 10, y_offset, 0],
