@@ -46,16 +46,19 @@ terminal_inputs = {
     "in_12" : x_offset + 110
 }
 
-relays = ["wet1", "wet2", "in1", "gnd1", "in2", "gnd2", "in3", "gnd3", "in4", "gnd4", "nc1", "no1", "com1", "nc2", "no2", "com2", "nc3", "no3", "com3", "power 12v", "power_24v"]
+relays = ["wet1", "wet2", "in1", "gnd1", "in2", "gnd2", "in3", "gnd3", "in4", "gnd4", "nc1", "no1", "com1", "nc2", "no2", "com2", "nc3", "no3", "com3", "12v", "24v"]
 
 y_offset = int(input("vertical offset (mm): "))
 x_offset = int(input("horizontal offset (mm): "))
 print("which relay input are you using? Type one of the following")
 relay_selection = int(input(relays))
-while relay_selction not in relays:
+while relay_selection not in relays:
     relay_selection = input("That's not one of the options, try again: ")
-terminal_selection = int(input("which terminal input are you using? (counting left to right) "))
+terminal_selection = input("which terminal input are you using? (counting left to right) ")
 
-relay_x = 
+relay_x = relay_inputs[relay_selection]
+terminal_x = terminal_inputs["in_" + terminal_selection]
 
-length.length()
+wire_length = length.length(relay_x, terminal_x, y_offset)
+
+print(f{"wire length should be {wire_length}mm."})
