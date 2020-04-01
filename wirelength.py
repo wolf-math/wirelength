@@ -46,12 +46,16 @@ terminal_inputs = {
     "in_12" : x_offset + 110
 }
 
+relays = ["wet1", "wet2", "in1", "gnd1", "in2", "gnd2", "in3", "gnd3", "in4", "gnd4", "nc1", "no1", "com1", "nc2", "no2", "com2", "nc3", "no3", "com3", "power 12v", "power_24v"]
 
 y_offset = int(input("vertical offset (mm): "))
 x_offset = int(input("horizontal offset (mm): "))
-print("which relay input are you using? Select from the following")
-relay_selection = int(input("(1) wet1 (2) wet2 (3) in1 (4) gnd1 (5) in2 (6) gnd2 (7) in3 (8) gnd3 (9) in4 (10) gnd4 (11) nc1 (12) no1 (13) com1 (14) nc2 (15) no2 (16) com2 (17) nc3 (18) no3 (19) com3 (20) power 12v (21) power_24v "))
-terminal_selection = int(input("which terminal input are you using? "))
+print("which relay input are you using? Type one of the following")
+relay_selection = int(input(relays))
+while relay_selction not in relays:
+    relay_selection = input("That's not one of the options, try again: ")
+terminal_selection = int(input("which terminal input are you using? (counting left to right) "))
 
-relay_x = relay_inputs
+relay_x = 
+
 length.length()
