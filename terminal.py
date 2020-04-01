@@ -16,7 +16,7 @@ class Terminal:
             "in_9" : [x_offset + 80, y_offset, 0],
             "in_10" : [x_offset + 90, y_offset, 0],
             "in_11" : [x_offset + 100, y_offset, 0],
-            "in_12" : [x_offset + 110, y_offset, 0],
+            "in_12" : [x_offset + 110, y_offset, 0]
             }
 
     # changes 3rd value in terminal value to 1, meaning it's plugged in
