@@ -1,4 +1,4 @@
 class Connection:
 
-    def connect(relay_input, terminal_input):
-        pass
+    def connect(self, relay_input, terminal_input):
+        
