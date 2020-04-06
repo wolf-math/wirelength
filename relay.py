@@ -37,4 +37,8 @@ class Relay:
     def plug(self, wire):
         self.inputs[wire][2] = 1
 
-    def connection(self, ):
+    def connection(self, input, wire):
+        self.wires[input] = wire  # This needs to change because of the init
+    
+    def terminal_thru_wire(self, wire):
+        return self.wires[pin].terminal # This also needs to change

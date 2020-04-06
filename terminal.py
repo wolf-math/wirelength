@@ -19,9 +19,11 @@ class Terminal:
             "in_12" : [x_offset + 110, y_offset, 0]
             }
 
-    # changes 3rd value in terminal value to 1, meaning it's plugged in
     def plug(self, wire):
-        self.inputs[wire][2] = 1
+        self.inputs[wire][2] = wire
+
+    def relay_thru_wire(self, wire):
+        return self.inputs[wire].relay
 
     def __str__(self):        
         return self.inputs
